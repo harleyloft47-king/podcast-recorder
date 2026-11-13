@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Podcast Recorder</title>
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+  :root{
+    --bg:#0f1012; --card:#17191c; --line:#2a2d32; --text:#ecebe7; --muted:#8d9097; --dim:#62656b;
+    --red:#ff4a3d; --amber:#ffb23d; --green:#3ddc84; --blue:#5aa9ff; --accent:#ff4a3d;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:920px;margin:0 auto;padding:28px 20px 60px}
+  header{display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+  .onair{display:inline-block;padding:4px 10px;border:1.5px solid var(--line);border-radius:6px;color:var(--muted);transition:.2s;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+  .onair.live{border-color:var(--red);color:#fff;background:var(--red);box-shadow:0 0 18px rgba(255,74,61,.55)}
+  .onair.paused{border-color:var(--amber);color:var(--amber)}
+  #show{flex:1;min-width:220px;background:transparent;border:none;border-bottom:1px solid var(--line);color:var(--text);font-size:22px;font-weight:600;padding:6px 2px;outline:none}
+  #show:focus{border-color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:16px}
+  h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:600}
+  label{color:var(--muted);font-size:13px}
+  select,input[type=text],input[type=number],textarea{background:#0f1012;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit}
+  input[type=number]{width:72px}
+  textarea{width:100%;resize:vertical;min-height:70px}
+  .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .row + .row{margin-top:12px}
+  .grow{flex:1;min-width:200px}
+  .grow select{width:100%;margin-top:4px}
+  .check{display:flex;gap:6px;align-items:center;color:var(--text);font-size:14px;cursor:pointer}
+  .note{color:var(--dim);font-size:12.5px}
+  input[type=range]{accent-color:var(--accent);width:130px;vertical-align:middle}
+  button{font:inherit;color:var(--text);background:#22252a;border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer;transition:background .15s,opacity .15s}
+  button:hover:not(:disabled){background:#2b2f35}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  button.primary{background:var(--text);color:#111;border-color:var(--text);font-weight:600}
+  button.primary:hover:not(:disabled){background:#fff}
+  .sub{border-top:1px dashed var(--line);margin-top:14px;padding-top:14px}
+  .hidden{display:none!important}
+
+  .stage{padding:22px;position:relative}
+  canvas#wave{width:100%;height:110px;display:block;border-radius:10px;background:#0c0d0f}
+  .meterwrap{display:flex;align-items:center;gap:12px;margin-top:10px}
+  .mlabel{width:64px;font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .meter{position:relative;flex:1;height:14px;border-radius:7px;background:#0c0d0f;overflow:hidden;border:1px solid var(--line)}
+  .meter .fill{position:absolute;inset:0 auto 0 0;width:0;background:linear-gradient(90deg,var(--green) 0%,var(--green) 70%,var(--amber) 85%,var(--red) 97%);background-size:var(--w,100%) 100%}
+  .meter .peak{position:absolute;top:0;bottom:0;width:2px;background:#fff;left:0;opacity:.9}
+  .meter .zone{position:absolute;top:0;bottom:0;border-left:1px dashed rgba(255,255,255,.25);border-right:1px dashed rgba(255,255,255,.25)}
+  .db{font-variant-numeric:tabular-nums;width:66px;text-align:right;color:var(--muted);font-size:13px}
+  .clip{width:12px;height:12px;border-radius:50%;background:#333;flex:none}
+  .clip.on{background:var(--red);box-shadow:0 0 10px var(--red)}
+  .scale{display:flex;justify-content:space-between;color:#5d6066;font-size:11px;margin:4px 102px 0 76px}
+  .center{display:flex;flex-direction:column;align-items:center;margin-top:14px}
+  .timer{font-variant-numeric:tabular-nums;font-size:54px;font-weight:300;letter-spacing:.02em;transition:color .3s}
+  .timer.goal{color:var(--amber)}
+  .goal{color:var(--muted);font-size:13px;min-height:18px;font-variant-numeric:tabular-nums}
+  .status{color:var(--muted);font-size:14px;min-height:20px;text-align:center}
+  .controls{display:flex;gap:14px;align-items:center;margin-top:14px}
+  .recbtn{min-width:170px;height:62px;border-radius:31px;padding:0 26px;border:3px solid #fff3;background:var(--red);color:#fff;font-size:19px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 6px 24px rgba(255,74,61,.35)}
+  .recbtn:hover:not(:disabled){background:#ff5d52}
+  .recbtn .ico{width:18px;height:18px;border-radius:50%;background:#fff;flex:none}
+  .recbtn.isrec{background:#3a2f15;border-color:var(--amber);color:var(--amber);box-shadow:none}
+  .recbtn.isrec:hover:not(:disabled){background:#4a3b1a}
+  .recbtn.isrec .ico{border-radius:0;height:18px;width:16px;background:transparent;border-left:5px solid var(--amber);border-right:5px solid var(--amber)}
+  .recbtn.cd{background:#22252a;border-color:var(--line);box-shadow:none}
+  .recbtn.cd .ico{display:none}
+  .controls button:not(.recbtn){height:48px;padding:0 18px}
+  .opts{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .livenotes{width:100%;margin-top:14px}
+  .livenotes textarea{min-height:56px}
+  .hint{color:var(--dim);font-size:12.5px;text-align:center;margin:12px 0 0}
+  kbd{background:#22252a;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11.5px;color:var(--muted)}
+  .countdown{position:absolute;inset:0;display:grid;place-items:center;background:rgba(15,16,18,.82);border-radius:var(--radius);font-size:160px;font-weight:200;color:var(--red);z-index:5;font-variant-numeric:tabular-nums}
+  .countdown small{display:block;font-size:15px;color:var(--muted);text-align:center;font-weight:400}
+  @keyframes pop{0%{transform:scale(1.3);opacity:.3}100%{transform:scale(1);opacity:1}}
+  .countdown span{animation:pop .35s ease-out;display:block;text-align:center;line-height:1}
+
+  .err{background:#3a1715;border:1px solid #6b2420;color:#ffc7c2;padding:10px 12px;border-radius:10px;margin-bottom:16px;display:none}
+  .err.show{display:block}
+  .err.ok{background:#14301f;border-color:#1f5a35;color:#bff2d2}
+
+  .sbhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+  .sbhead h2{margin:0;flex:1}
+  .pads{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .pad.addpad{all:unset;box-sizing:border-box;cursor:pointer;border:1.5px dashed var(--line);border-radius:12px;min-height:108px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--muted);font-size:14px;font-weight:600}
+  .pad.addpad:hover{border-color:var(--muted);color:var(--text);background:#1a1c20}
+  .pad.addpad .plus{font-size:24px;line-height:1}
+  .pad.addpad .k{font-weight:400}
+  .pad.editing{border-color:var(--amber)}
+  .pad .edit{padding:10px;display:flex;flex-direction:column;gap:7px}
+  .pad .edit input{padding:6px 8px;font-size:13.5px;width:100%}
+  .pad .edit .ebtns{display:flex;gap:6px}
+  .pad .edit button{padding:5px 8px;font-size:12.5px;border-radius:7px;flex:1}
+  .pad{position:relative;border:1px solid var(--line);border-radius:12px;background:#1d2024;overflow:hidden;display:flex;flex-direction:column}
+  .pad .hit{all:unset;cursor:pointer;padding:14px 12px 10px;min-height:70px;display:flex;flex-direction:column;gap:4px}
+  .pad .hit:hover{background:#252930}
+  .pad .k{font-size:11px;color:var(--dim)}
+  .pad .nm{font-weight:600;font-size:14px;line-height:1.25;word-break:break-word}
+  .pad.empty .nm{color:var(--dim);font-weight:500}
+  .pad .bar{position:absolute;left:0;top:0;height:3px;background:var(--blue);width:0}
+  .pad.playing{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue) inset}
+  .pad .ft{display:flex;align-items:center;gap:6px;padding:6px 8px;border-top:1px solid var(--line)}
+  .pad .ft input[type=range]{width:100%;flex:1}
+  .pad .ft button{padding:3px 8px;font-size:12px;border-radius:6px}
+
+  ul#takes{list-style:none;margin:0;padding:0}
+  .take{border-top:1px solid var(--line);padding:14px 0}
+  .take:first-child{border-top:none;padding-top:0}
+  .take .top{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .take input.name{flex:1;min-width:160px;background:transparent;border:1px solid transparent;font-weight:600;font-size:15px;padding:6px 8px}
+  .take input.name:hover,.take input.name:focus{border-color:var(--line);outline:none}
+  .meta{color:var(--muted);font-size:12.5px;margin:2px 0 8px 9px}
+  .badge{font-size:11px;padding:2px 7px;border-radius:999px;background:#22252a;color:var(--muted);margin-left:6px;white-space:nowrap}
+  .badge.live{background:var(--red);color:#fff}
+  .badge.rec{background:#3a2f15;color:var(--amber)}
+  .badge.pol{background:#162a40;color:var(--blue)}
+  .take audio{width:100%;margin-top:10px;height:36px}
+  .take .btns{display:flex;gap:7px;flex-wrap:wrap;margin-left:8px;align-items:center}
+  .take .btns button,.take .btns select{padding:6px 10px;font-size:13px}
+  .prog{font-size:12.5px;color:var(--blue);margin:6px 0 0 9px;min-height:0}
+  button.danger.confirm{background:var(--red);border-color:var(--red);color:#fff}
+  .panel{margin:10px 0 0 8px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#131518}
+  .panel h3{margin:0 0 8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .trimcv{width:100%;height:110px;display:block;border-radius:8px;background:#0c0d0f;cursor:ew-resize;touch-action:none}
+  .trimrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .trimrow .btns{margin:0}
+  .empty{color:var(--muted);font-size:14px;margin:0}
+  footer{color:#5d6066;font-size:12px;text-align:center;margin-top:10px}
+  .flash{animation:flash .5s}
+  @keyframes flash{0%{background:var(--amber);color:#111}100%{}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="onair" id="onair">On Air</span>
+    <input id="show" type="text" placeholder="Episode name" aria-label="Episode name">
+  </header>
+
+  <div class="err show" id="noscript"><strong>This page can't run here.</strong> You're probably viewing it in a preview (like the file preview in the Claude app), which blocks the buttons and the microphone. Download the file, then open it in Chrome, Edge, Firefox or Safari: double-click it, or drag it into a browser window.</div>
+  <div class="err" id="err"></div>
+
+  <!-- INPUT -->
+  <section class="card">
+    <h2>Input</h2>
+    <div class="row">
+      <label class="grow"><span id="lbl1">Microphone</span>
+        <select id="dev"><option value="">Default microphone</option></select>
+      </label>
+      <button class="primary" id="enable">Enable microphone</button>
+    </div>
+    <div class="row">
+      <label id="chwrap">Channels
+        <select id="ch"><option value="1" selected>Mono (voice)</option><option value="2">Stereo</option></select>
+      </label>
+      <label>Input gain <input type="range" id="gain" min="0" max="300" value="100"> <span id="gainv">100%</span></label>
+    </div>
+    <div class="row">
+      <label class="check" title="Off is best with headphones; on helps if speakers are bleeding into the mic"><input type="checkbox" id="ec"> Echo cancellation</label>
+      <label class="check" title="Browser noise suppression; can make voices sound processed"><input type="checkbox" id="ns"> Noise suppression</label>
+      <label class="check" title="Automatic gain; usually best off for podcasts"><input type="checkbox" id="agc"> Auto gain</label>
+    </div>
+    <div class="row">
+      <label class="check"><input type="checkbox" id="mon"> Hear myself in headphones</label>
+      <label class="check"><input type="checkbox" id="dual"> Add a co-host mic</label>
+    </div>
+    <p class="note hidden" id="monnote">Use headphones while this is on. Through speakers, the mic will pick itself up and squeal.</p>
+
+    <div class="sub hidden" id="dualbox">
+      <div class="row">
+        <label>Your name <input type="text" id="n1" value="Host" style="width:130px"></label>
+        <label>Co-host name <input type="text" id="n2" value="Guest" style="width:130px"></label>
+      </div>
+      <div class="row">
+        <label class="grow">Co-host microphone
+          <select id="dev2"><option value="">Pick the co-host's microphone</option></select>
+        </label>
+        <label>Co-host gain <input type="range" id="gain2" min="0" max="300" value="100"> <span id="gainv2">100%</span></label>
+      </div>
+      <p class="note">Each person is recorded on their own track (plus one for the soundboard). Use two separate USB mics. You can download each track or a combined mix.</p>
+    </div>
+  </section>
+
+  <!-- STAGE -->
+  <section class="card stage" id="stage">
+    <div class="countdown hidden" id="cd"><div><span id="cdn">3</span><small>Press Space or the button to cancel</small></div></div>
+    <canvas id="wave"></canvas>
+    <div id="meters"></div>
+    <div class="scale"><span>−60</span><span>−48</span><span>−36</span><span>−24</span><span>−12</span><span>0 dB</span></div>
+
+    <div class="center">
+      <div class="timer" id="timer">00:00:00</div>
+      <div class="goal" id="goal"></div>
+      <div class="status" id="status">Microphone off</div>
+      <div class="controls">
+        <button id="mark" disabled>＋ Marker</button>
+        <button class="recbtn" id="rec" disabled aria-label="Record"><span class="ico"></span><span id="reclabel">Record</span></button>
+        <button id="stop" disabled>■ Stop</button>
+      </div>
+      <div class="opts">
+        <label class="check"><input type="checkbox" id="cdon" checked> 3-2-1 countdown</label>
+        <label class="check">Length goal <input type="number" id="goalmin" min="0" max="600" step="1" placeholder="off"> min</label>
+        <label class="check" title="Plays a soft chime when you hit your length goal"><input type="checkbox" id="goalsound" checked> Chime</label>
+      </div>
+      <div class="livenotes">
+        <textarea id="livenotes" placeholder="Notes for this take: guest names, topics, links for the show notes… (saved with the take)" disabled></textarea>
+      </div>
+      <p class="hint"><kbd>Space</kbd> record / pause · <kbd>M</kbd> marker · <kbd>S</kbd> stop · <kbd>1</kbd>–<kbd>9</kbd> soundboard · Aim for peaks in the dashed zone (−12 to −6 dB)</p>
+    </div>
+  </section>
+
+  <!-- SOUNDBOARD -->
+  <section class="card">
+    <div class="sbhead">
+      <h2>Soundboard</h2>
+      <label>Volume <input type="range" id="sbvol" min="0" max="150" value="80"></label>
+      <button id="sbrestore" class="hidden" title="Bring back the intro, whoosh, sting and outro sounds">Restore built-in sounds</button>
+      <button id="sbstop">■ Stop all</button>
+    </div>
+    <div class="pads" id="pads"></div>
+    <p class="note" style="margin:10px 0 0">Click a pad or press its number to play; click again to stop. Sounds play into the recording. <strong>Add sound</strong> puts your own music or effect on a new pad; <strong>✎ Edit</strong> renames, replaces or deletes a pad. Wear headphones so the mic doesn't pick the sound up a second time.</p>
+    <input type="file" id="padfile" accept="audio/*" class="hidden">
+  </section>
+
+  <!-- TAKES -->
+  <section class="card">
+    <h2>Takes</h2>
+    <ul id="takes"></ul>
+    <p class="empty" id="empty">No takes yet. Your recordings save in this browser as you go, so a crash or closed tab won't lose them.</p>
+  </section>
+
+  <footer id="foot">Recordings are lossless 16-bit WAV and never leave your computer.</footer>
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const MIN_DB = -60;
+  $('noscript').remove();
+  const tick = () => new Promise(r => setTimeout(r, 0));
+
+  // ---------- preview / embed detection ----------
+  let framed = false;
+  try { framed = window.top !== window.self; } catch (e) { framed = true; }
+  let micBlocked = false;
+  try {
+    const pol = document.permissionsPolicy || document.featurePolicy;
+    if (pol && pol.allowsFeature && !pol.allowsFeature('microphone')) micBlocked = true;
+  } catch (e) {}
+  const PREVIEW_MSG = 'This page is open inside a preview that blocks the microphone. Download the file and open it directly in Chrome, Edge, Firefox or Safari (double-click it, or drag it into a browser window).';
+  if (micBlocked || (framed && !navigator.mediaDevices)) setTimeout(() => showErr(PREVIEW_MSG));
+
+  // ================= STORAGE =================
+  const mem = { takes: new Map(), chunks: new Map(), pads: new Map() };
+  let useMem = false;
+  const dbp = new Promise((res, rej) => {
+    try {
+      const r = indexedDB.open('podcast-recorder', 2);
+      r.onupgradeneeded = () => {
+        const d = r.result;
+        if (!d.objectStoreNames.contains('takes')) d.createObjectStore('takes', { keyPath: 'id' });
+        if (!d.objectStoreNames.contains('chunks')) d.createObjectStore('chunks', { keyPath: ['takeId', 'idx'] });
+        if (!d.objectStoreNames.contains('pads')) d.createObjectStore('pads', { keyPath: 'id' });
+      };
+      r.onsuccess = () => { const d = r.result; d.onversionchange = () => d.close(); res(d); };
+      r.onerror = () => rej(r.error);
+      r.onblocked = () => rej(new Error('blocked'));
+      setTimeout(() => rej(new Error('timeout')), 3000);
+    } catch (e) { rej(e); }
+  }).catch(e => {
+    useMem = true;
+    showErr(e && e.message === 'blocked'
+      ? 'An older copy of Podcast Recorder is open in another tab. Close it and refresh this page so your takes can be saved as you go. (Until then, recording still works; download takes before closing.)'
+      : 'This browser won\'t let the page save recordings as it goes. Recording still works, but download your takes before closing the tab.');
+    return null;
+  });
+
+  function tx(stores, mode, fn) {
+    return dbp.then(d => new Promise((res, rej) => {
+      if (!d) return rej(new Error('no database'));
+      setTimeout(() => rej(new Error('Saving timed out')), 8000);
+      const t = d.transaction(stores, mode);
+      let out;
+      const q = fn(t);
+      if (q) q.onsuccess = () => { out = q.result; };
+      t.oncomplete = () => res(out);
+      t.onerror = () => rej(t.error);
+      t.onabort = () => rej(t.error);
+    }));
+  }
+  let warnedMem = false;
+  function toMem(err) {
+    if (!useMem) {
+      useMem = true;
+      if (!warnedMem) { warnedMem = true; showErr('Your browser stopped letting this page save recordings as you go' + (err && err.message ? ' (' + err.message + ')' : '') + '. Recording still works, but download your takes before closing this tab.'); }
+    }
+  }
+  const clone = o => JSON.parse(JSON.stringify(o));
+  const store = {
+    async putTake(t) {
+      mem.takes.set(t.id, clone(t));
+      if (useMem) return;
+      try { await tx('takes', 'readwrite', x => x.objectStore('takes').put(clone(t))); } catch (e) { toMem(e); }
+    },
+    async allTakes() {
+      await dbp;
+      let list = [];
+      if (!useMem) { try { list = await tx('takes', 'readonly', x => x.objectStore('takes').getAll()) || []; } catch (e) { toMem(e); } }
+      const map = new Map(list.map(t => [t.id, t]));
+      for (const [id, t] of mem.takes) map.set(id, t);
+      return [...map.values()].map(normalizeTake);
+    },
+    async putChunk(c) {
+      if (!useMem) {
+        try { await tx('chunks', 'readwrite', x => x.objectStore('chunks').put(c)); return; } catch (e) { toMem(e); }
+      }
+      if (!mem.chunks.has(c.takeId)) mem.chunks.set(c.takeId, []);
+      mem.chunks.get(c.takeId)[c.idx] = c;
+    },
+    async getChunks(id) {
+      let list = [];
+      const d = await dbp;
+      if (d) { try { list = await tx('chunks', 'readonly', x => x.objectStore('chunks').getAll(IDBKeyRange.bound([id, 0], [id, Infinity]))) || []; } catch (e) {} }
+      const byIdx = new Map(list.map(c => [c.idx, c]));
+      for (const c of (mem.chunks.get(id) || [])) if (c) byIdx.set(c.idx, c);
+      return [...byIdx.values()].sort((a, b) => a.idx - b.idx);
+    },
+    async delTake(id) {
+      mem.takes.delete(id); mem.chunks.delete(id);
+      const d = await dbp;
+      if (d) { try { await tx(['takes', 'chunks'], 'readwrite', x => {
+        x.objectStore('takes').delete(id);
+        x.objectStore('chunks').delete(IDBKeyRange.bound([id, 0], [id, Infinity]));
+      }); } catch (e) {} }
+    },
+    async putPad(p) {
+      mem.pads.set(p.id, p);
+      const d = await dbp;
+      if (d && !useMem) { try { await tx('pads', 'readwrite', x => x.objectStore('pads').put(p)); } catch (e) {} }
+    },
+    async allPads() {
+      const d = await dbp;
+      let list = [];
+      if (d) { try { list = await tx('pads', 'readonly', x => x.objectStore('pads').getAll()) || []; } catch (e) {} }
+      const map = new Map(list.map(p => [p.id, p]));
+      for (const [id, p] of mem.pads) map.set(id, p);
+      return map;
+    },
+    async delPad(id) {
+      mem.pads.delete(id);
+      const d = await dbp;
+      if (d && !useMem) { try { await tx('pads', 'readwrite', x => x.objectStore('pads').delete(id)); } catch (e) {} }
+    }
+  };
+  function normalizeTake(t) {
+    if (!t.tracks) t.tracks = [{ name: 'Main', chans: [...Array(t.channels).keys()] }];
+    if (!t.markers) t.markers = [];
+    if (t.notes == null) t.notes = '';
+    return t;
+  }
+
+  // ================= AUDIO GRAPH =================
+  let ctx, sink, sbBus, sbOut, monGain, anMix, capNode = null, workletReady = null, forceLegacy = false;
+  const mics = [{}, {}];
+  let routeNodes = [];
+  let state = 'off'; // off | ready | countdown | recording | paused
+  let take = null, pend = [], pendFrames = 0, chunkIdx = 0, writeQ = Promise.resolve();
+
+  const WORKLET = `class Cap extends AudioWorkletProcessor{process(inputs){const i=inputs[0];if(i&&i.length&&i[0].length){this.port.postMessage(i.map(c=>c.slice(0)));}return true;}}registerProcessor('cap',Cap);`;
+
+  async function ensureContext() {
+    if (ctx) { if (ctx.state !== 'running') ctx.resume().catch(() => {}); return; }
+    ctx = new (window.AudioContext || window.webkitAudioContext)({ latencyHint: 'interactive' });
+    for (const [i, m] of mics.entries()) {
+      m.gain = ctx.createGain();
+      m.gain.gain.value = $(i ? 'gain2' : 'gain').value / 100;
+      m.an = ctx.createAnalyser(); m.an.fftSize = 2048;
+      m.gain.connect(m.an);
+    }
+    anMix = ctx.createAnalyser(); anMix.fftSize = 2048;
+    sbBus = ctx.createGain(); sbBus.gain.value = $('sbvol').value / 100;
+    sbOut = ctx.createGain(); sbBus.connect(sbOut); sbOut.connect(ctx.destination);
+    monGain = ctx.createGain(); monGain.gain.value = $('mon').checked ? 1 : 0; monGain.connect(ctx.destination);
+    mics[0].gain.connect(monGain); mics[1].gain.connect(monGain);
+    sink = ctx.createGain(); sink.gain.value = 0; sink.connect(ctx.destination);
+    if (ctx.audioWorklet) {
+      const blobUrl = URL.createObjectURL(new Blob([WORKLET], { type: 'application/javascript' }));
+      const dataUrl = 'data:application/javascript;charset=utf-8,' + encodeURIComponent(WORKLET);
+      workletReady = ctx.audioWorklet.addModule(blobUrl).then(() => true)
+        .catch(() => ctx.audioWorklet.addModule(dataUrl).then(() => true))
+        .catch(() => false);
+    } else workletReady = Promise.resolve(false);
+    await route();
+  }
+
+  const isDual = () => $('dual').checked;
+  const capChannels = () => isDual() ? 3 : +$('ch').value;
+
+  async function makeCap(ch, interp) {
+    const wk = forceLegacy ? false : await Promise.race([workletReady, new Promise(r => setTimeout(() => r(false), 2000))]);
+    let node;
+    if (wk) {
+      node = new AudioWorkletNode(ctx, 'cap', {
+        numberOfInputs: 1, numberOfOutputs: 1, outputChannelCount: [1],
+        channelCount: ch, channelCountMode: 'explicit', channelInterpretation: interp
+      });
+      node.port.onmessage = e => onAudio(e.data);
+    } else {
+      node = ctx.createScriptProcessor(4096, ch, 1);
+      node.channelInterpretation = interp;
+      node.onaudioprocess = e => {
+        const a = [];
+        for (let i = 0; i < ch; i++) a.push(e.inputBuffer.getChannelData(i).slice());
+        onAudio(a);
+      };
+    }
+    return node;
+  }
+
+  // Single mode: (mic + soundboard) -> capture (1 or 2 ch)
+  // Dual mode:   merger[ host, co-host, soundboard ] -> capture (3 ch, one track each)
+  async function route() {
+    const dual = isDual(), ch = capChannels();
+    for (const n of routeNodes) {
+      for (const s of [mics[0].gain, mics[1].gain, sbBus]) { try { s.disconnect(n); } catch (e) {} }
+      try { n.disconnect(); } catch (e) {}
+    }
+    routeNodes = [];
+    if (capNode) {
+      try { capNode.disconnect(); } catch (e) {}
+      if (capNode.port) capNode.port.onmessage = null; else capNode.onaudioprocess = null;
+      capNode = null;
+    }
+    const mix = ctx.createGain();
+    mics[0].gain.connect(mix); sbBus.connect(mix);
+    if (dual) mics[1].gain.connect(mix);
+    mix.connect(anMix);
+    routeNodes.push(mix);
+    let feed = mix;
+    if (dual) {
+      const mg = ctx.createChannelMerger(3);
+      mics[0].gain.connect(mg, 0, 0); mics[1].gain.connect(mg, 0, 1); sbBus.connect(mg, 0, 2);
+      routeNodes.push(mg);
+      feed = mg;
+    }
+    capNode = await makeCap(ch, dual ? 'discrete' : 'speakers');
+    capNode._ch = ch; capNode._dual = dual;
+    feed.connect(capNode); capNode.connect(sink);
+    renderMeters();
+  }
+
+  function micConstraints(deviceId, stereo) {
+    return {
+      audio: {
+        deviceId: deviceId ? { exact: deviceId } : undefined,
+        echoCancellation: $('ec').checked, noiseSuppression: $('ns').checked, autoGainControl: $('agc').checked,
+        channelCount: { ideal: stereo ? 2 : 1 }, sampleRate: { ideal: 48000 }
+      }
+    };
+  }
+  async function openMic(i, deviceId) {
+    const s = await navigator.mediaDevices.getUserMedia(micConstraints(deviceId, i === 0 && !isDual() && $('ch').value === '2'));
+    const m = mics[i];
+    if (m.stream) m.stream.getTracks().forEach(t => t.stop());
+    if (m.src) try { m.src.disconnect(); } catch (e) {}
+    m.stream = s;
+    m.src = ctx.createMediaStreamSource(s);
+    m.src.connect(m.gain);
+    s.getAudioTracks()[0].addEventListener('ended', () => {
+      if (m.stream !== s) return;
+      if (state === 'recording') togglePause();
+      showErr((i ? 'The co-host microphone' : 'The microphone') + ' disconnected. Recording is paused; pick a mic and press Reconnect to continue.');
+    });
+  }
+  function closeMic(i) {
+    const m = mics[i];
+    if (m.stream) m.stream.getTracks().forEach(t => t.stop());
+    if (m.src) try { m.src.disconnect(); } catch (e) {}
+    m.stream = null; m.src = null;
+  }
+
+  async function enableMic() {
+    hideErr();
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      if (framed) { showErr(PREVIEW_MSG); return; }
+      showErr('Microphone access isn\'t available here. Open this file directly in Chrome, Edge, Firefox or Safari (double-click it, or drag it into a browser window).');
+      return;
+    }
+    try {
+      await ensureContext();
+      await openMic(0, $('dev').value);
+      await listDevices();
+      if (isDual()) {
+        const d1 = mics[0].stream.getAudioTracks()[0].getSettings().deviceId;
+        if (!$('dev2').value) {
+          const skip = new Set([d1, 'default', 'communications', $('dev').value]);
+          const other = [...$('dev2').options].find(o => o.value && !skip.has(o.value));
+          if (other) $('dev2').value = other.value;
+        }
+        const d2 = $('dev2').value;
+        if (!d2) { closeMic(1); showErr('Pick the co-host\'s microphone under "Co-host microphone".'); }
+        else if (d2 === d1 || (d2 === 'default' && !$('dev').value)) { closeMic(1); showErr('The co-host needs a different microphone from yours. Pick another one under "Co-host microphone".'); }
+        else await openMic(1, d2);
+      } else closeMic(1);
+      if (!capNode || capNode._ch !== capChannels() || capNode._dual !== isDual()) await route();
+      if (state === 'off') state = 'ready';
+      $('enable').textContent = 'Reconnect microphone';
+      $('enable').classList.remove('primary');
+      ui();
+    } catch (e) {
+      const m = e && e.name === 'NotAllowedError' && (framed || micBlocked)
+        ? PREVIEW_MSG
+        : e && e.name === 'NotAllowedError'
+        ? 'Microphone permission was blocked. Allow the microphone for this page in your browser\'s address bar, then press Enable again.'
+        : e && (e.name === 'NotFoundError' || e.name === 'OverconstrainedError') ? 'That microphone wasn\'t found. Plug it in, or pick another one, and try again.'
+        : e && e.name === 'NotReadableError' ? 'The microphone is busy or couldn\'t start. Close other apps using it (Zoom, Discord…) and try again.'
+        : 'Couldn\'t open the microphone: ' + (e && e.message || e);
+      showErr(m);
+    }
+  }
+
+  async function listDevices() {
+    let devs = [];
+    try { devs = (await navigator.mediaDevices.enumerateDevices()).filter(d => d.kind === 'audioinput'); } catch (e) {}
+    const fill = (sel, cur, placeholder) => {
+      sel.innerHTML = '';
+      if (placeholder) { const o = document.createElement('option'); o.value = ''; o.textContent = placeholder; sel.appendChild(o); }
+      devs.forEach((d, i) => {
+        const o = document.createElement('option');
+        o.value = d.deviceId; o.textContent = d.label || `Microphone ${i + 1}`;
+        sel.appendChild(o);
+      });
+      if (!sel.options.length) sel.innerHTML = '<option value="">Default microphone</option>';
+      if ([...sel.options].some(o => o.value === cur)) sel.value = cur;
+    };
+    const cur1 = $('dev').value || (mics[0].stream && mics[0].stream.getAudioTracks()[0]?.getSettings().deviceId) || '';
+    fill($('dev'), cur1);
+    const cur2 = $('dev2').value || (mics[1].stream && mics[1].stream.getAudioTracks()[0]?.getSettings().deviceId) || '';
+    fill($('dev2'), cur2, 'Pick the co-host\'s microphone');
+  }
+
+  // ================= RECORDING =================
+  function onAudio(chs) {
+    if (state !== 'recording' || !take) return;
+    const n = chs[0].length;
+    pend.push(chs); pendFrames += n; take.frames += n;
+    if (pendFrames >= ctx.sampleRate) flush();
+  }
+  function flush() {
+    if (!pendFrames || !take) return;
+    const ch = take.channels;
+    const out = new Int16Array(pendFrames * ch);
+    let o = 0;
+    for (const blk of pend) {
+      const n = blk[0].length;
+      for (let i = 0; i < n; i++) for (let c = 0; c < ch; c++) {
+        let v = (blk[c] || blk[0])[i];
+        v = v < -1 ? -1 : v > 1 ? 1 : v;
+        out[o++] = v < 0 ? v * 0x8000 : v * 0x7fff;
+      }
+    }
+    pend = []; pendFrames = 0;
+    const chunk = { takeId: take.id, idx: chunkIdx++, blob: new Blob([out.buffer]) };
+    const snap = clone(take);
+    writeQ = writeQ.then(() => store.putChunk(chunk)).then(() => store.putTake(snap))
+      .catch(err => showErr('Saving failed (' + (err && err.message || err) + '). Your disk may be full. Stop and download this take now.'));
+  }
+
+  let starting = false, takeCount = 0;
+  async function startTake() {
+    if (starting) return;
+    starting = true;
+    try {
+      await ensureContext();
+      const ch = capChannels(), dual = isDual();
+      if (!capNode || capNode._ch !== ch || capNode._dual !== dual) await route();
+      take = {
+        id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        name: 'Take ' + (++takeCount),
+        sampleRate: ctx.sampleRate, channels: ch, frames: 0,
+        created: Date.now(), status: 'recording', markers: [], notes: '',
+        tracks: dual
+          ? [{ name: $('n1').value.trim() || 'Host', chans: [0] }, { name: $('n2').value.trim() || 'Guest', chans: [1] }, { name: 'Soundboard', chans: [2] }]
+          : [{ name: 'Main', chans: ch === 2 ? [0, 1] : [0] }]
+      };
+      chunkIdx = 0; pend = []; pendFrames = 0; goalHit = false;
+      $('livenotes').value = '';
+      state = 'recording';
+      ui();
+      store.putTake(take).then(renderTakes);
+      renderTakes();
+      const t0 = take;
+      setTimeout(async () => {
+        if (take === t0 && state === 'recording' && t0.frames === 0 && !forceLegacy) {
+          forceLegacy = true;
+          await route();
+        }
+      }, 1500);
+    } catch (e) {
+      take = null; state = mics[0].stream ? 'ready' : 'off'; ui();
+      showErr('Couldn\'t start recording: ' + (e && e.message || e));
+    } finally { starting = false; }
+  }
+
+  // ---- countdown ----
+  let cdTimer = null;
+  function beginRecord() {
+    if (!$('cdon').checked) return startTake();
+    state = 'countdown'; ui();
+    let n = 3;
+    const show = () => { $('cd').classList.remove('hidden'); $('cdn').textContent = n; $('cdn').style.animation = 'none'; void $('cdn').offsetWidth; $('cdn').style.animation = ''; beep(n === 1 ? 880 : 660, 0.09); };
+    show();
+    cdTimer = setInterval(() => {
+      n--;
+      if (n <= 0) { clearInterval(cdTimer); cdTimer = null; $('cd').classList.add('hidden'); startTake(); }
+      else show();
+    }, 1000);
+  }
+  function cancelCountdown() {
+    clearInterval(cdTimer); cdTimer = null;
+    $('cd').classList.add('hidden');
+    state = 'ready'; ui();
+  }
+  function beep(freq, dur, vol = 0.18) {
+    if (!ctx) return;
+    const o = ctx.createOscillator(), g = ctx.createGain(), t = ctx.currentTime;
+    o.frequency.value = freq; o.type = 'sine';
+    g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + 0.01); g.gain.exponentialRampToValueAtTime(0.0005, t + dur);
+    o.connect(g); g.connect(ctx.destination); o.start(t); o.stop(t + dur + 0.05);
+  }
+  function chime() {
+    if (!ctx) return;
+    [[784, 0], [988, 0.18], [1175, 0.36]].forEach(([f, d]) => setTimeout(() => beep(f, 0.9, 0.12), d * 1000));
+  }
+
+  function togglePause() {
+    if (state === 'recording') { state = 'paused'; flush(); }
+    else if (state === 'paused') state = 'recording';
+    ui();
+  }
+
+  async function stopTake() {
+    if (!take) return;
+    flush();
+    const t = take; t.status = 'done';
+    t.notes = $('livenotes').value;
+    delete t._goal;
+    state = mics[0].stream ? 'ready' : 'off';
+    take = null;
+    ui();
+    mem.takes.set(t.id, clone(t));
+    renderTakes();
+    $('status').textContent = `Saved ${t.name} (${fmt(t.frames / t.sampleRate)}). It's in the Takes list below.`;
+    try { await writeQ; } catch (e) {}
+    await store.putTake(t);
+    renderTakes();
+    if (t.frames === 0) showErr('That take came out empty: no audio reached the recorder. Try pressing "Reconnect microphone", then record again. If it keeps happening, tell me which browser you\'re using.');
+  }
+
+  function addMarker() {
+    if (!take) return;
+    take.markers.push(take.frames / take.sampleRate);
+    const b = $('mark'); b.classList.remove('flash'); void b.offsetWidth; b.classList.add('flash');
+    setStatus();
+  }
+
+  // ================= READING / EXPORT =================
+  const effRange = t => t.trim ? [t.trim.start, t.trim.end] : [0, t.frames];
+  const effFrames = t => { const [a, b] = effRange(t); return b - a; };
+  // spec: list of output channels, each = list of stored channels summed into it
+  function specFor(t, sel) {
+    if (t.tracks.length === 1) return t.tracks[0].chans.map(c => [c]);
+    if (sel == null || sel === 'mix') return [t.tracks.flatMap(x => x.chans)];
+    return t.tracks[+sel].chans.map(c => [c]);
+  }
+  async function* readBlocks(t, spec, from = 0, to = Infinity) {
+    const chunks = await store.getChunks(t.id);
+    const ch = t.channels;
+    let off = 0;
+    for (const c of chunks) {
+      const n = c.blob.size / (2 * ch);
+      const s = off, e = off + n; off = e;
+      if (e <= from || s >= to) continue;
+      const i16 = new Int16Array(await c.blob.arrayBuffer());
+      const a = Math.max(0, from - s), b = Math.min(n, to - s), len = b - a;
+      const out = spec.map(() => new Float32Array(len));
+      for (let k = 0; k < spec.length; k++) {
+        const srcs = spec[k], o = out[k];
+        if (srcs.length === 1) { const sc = srcs[0]; for (let i = 0; i < len; i++) o[i] = i16[(a + i) * ch + sc] / 32768; }
+        else for (let i = 0; i < len; i++) { let v = 0; const base = (a + i) * ch; for (const sc of srcs) v += i16[base + sc]; o[i] = v / 32768; }
+      }
+      yield { data: out, start: s + a };
+    }
+  }
+  function toI16(f) { const o = new Int16Array(f.length); for (let i = 0; i < f.length; i++) { let v = f[i]; v = v < -1 ? -1 : v > 1 ? 1 : v; o[i] = v < 0 ? v * 0x8000 : v * 0x7fff; } return o; }
+  function interleave(chs) {
+    const n = chs[0].length, k = chs.length;
+    if (k === 1) return toI16(chs[0]);
+    const o = new Int16Array(n * k);
+    for (let i = 0; i < n; i++) for (let c = 0; c < k; c++) { let v = chs[c][i]; v = v < -1 ? -1 : v > 1 ? 1 : v; o[i * k + c] = v < 0 ? v * 0x8000 : v * 0x7fff; }
+    return o;
+  }
+  function wavHeader(dataLen, ch, sr) {
+    const h = new DataView(new ArrayBuffer(44));
+    const w = (o, s) => { for (let i = 0; i < s.length; i++) h.setUint8(o + i, s.charCodeAt(i)); };
+    w(0, 'RIFF'); h.setUint32(4, 36 + dataLen, true); w(8, 'WAVE');
+    w(12, 'fmt '); h.setUint32(16, 16, true); h.setUint16(20, 1, true); h.setUint16(22, ch, true);
+    h.setUint32(24, sr, true); h.setUint32(28, sr * ch * 2, true); h.setUint16(32, ch * 2, true); h.setUint16(34, 16, true);
+    w(36, 'data'); h.setUint32(40, dataLen, true);
+    return h.buffer;
+  }
+  async function makeWav(t, sel, from, to, onProg) {
+    const spec = specFor(t, sel);
+    if (from == null) [from, to] = effRange(t);
+    const identity = from === 0 && to >= t.frames && spec.length === t.channels && spec.every((s, i) => s.length === 1 && s[0] === i);
+    const parts = []; let len = 0;
+    if (identity) {
+      for (const c of await store.getChunks(t.id)) { parts.push(c.blob); len += c.blob.size; }
+    } else {
+      const total = Math.max(1, to - from); let done = 0;
+      for await (const b of readBlocks(t, spec, from, to)) {
+        const i16 = interleave(b.data); parts.push(new Blob([i16.buffer])); len += i16.byteLength;
+        done += b.data[0].length; if (onProg) { onProg(done / total); await tick(); }
+      }
+    }
+    return new Blob([wavHeader(len, spec.length, t.sampleRate), ...parts], { type: 'audio/wav' });
+  }
+
+  // ---- MP3 (lamejs, loaded from a CDN the first time it's needed) ----
+  let lamePromise = null;
+  function loadLame() {
+    if (window.lamejs) return Promise.resolve(window.lamejs);
+    if (lamePromise) return lamePromise;
+    const urls = [
+      'https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js',
+      'https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js',
+      'https://unpkg.com/lamejs@1.2.1/lame.min.js'
+    ];
+    lamePromise = (async () => {
+      for (const u of urls) {
+        try {
+          await new Promise((res, rej) => { const s = document.createElement('script'); s.src = u; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
+          if (window.lamejs) return window.lamejs;
+        } catch (e) {}
+      }
+      lamePromise = null;
+      throw new Error('MP3 export needs an internet connection to load the MP3 encoder. Connect and try again, or download the WAV instead.');
+    })();
+    return lamePromise;
+  }
+  async function makeMp3(t, sel, onProg) {
+    const lame = await loadLame();
+    const spec = specFor(t, sel);
+    const outCh = Math.min(2, spec.length);
+    const kbps = outCh === 1 ? 96 : 128;
+    const enc = new lame.Mp3Encoder(outCh, t.sampleRate, kbps);
+    const [from, to] = effRange(t);
+    const total = Math.max(1, to - from); let done = 0;
+    const parts = [];
+    const STEP = 1152 * 16;
+    for await (const b of readBlocks(t, spec, from, to)) {
+      const L = toI16(b.data[0]), R = outCh > 1 ? toI16(b.data[1]) : null;
+      for (let i = 0; i < L.length; i += STEP) {
+        const buf = R ? enc.encodeBuffer(L.subarray(i, i + STEP), R.subarray(i, i + STEP)) : enc.encodeBuffer(L.subarray(i, i + STEP));
+        if (buf.length) parts.push(new Uint8Array(buf));
+      }
+      done += L.length; onProg && onProg(done / total);
+      await tick();
+    }
+    const end = enc.flush();
+    if (end.length) parts.push(new Uint8Array(end));
+    return new Blob(parts, { type: 'audio/mpeg' });
+  }
+
+  // ---- Polish: loudness normalize (ITU-R BS.1770 / EBU R128), true-ish peak limit, trim silence ----
+  function kFilter(sr) {
+    // pre-filter (high shelf) + RLB high-pass, coefficients per BS.1770 (derived for any sample rate)
+    const mk = (b0, b1, b2, a1, a2) => ({ b0, b1, b2, a1, a2, x1: 0, x2: 0, y1: 0, y2: 0 });
+    let f0 = 1681.974450955533, G = 3.999843853973347, Q = 0.7071752369554196;
+    let K = Math.tan(Math.PI * f0 / sr), Vh = Math.pow(10, G / 20), Vb = Math.pow(Vh, 0.4996667741545416);
+    let a0 = 1 + K / Q + K * K;
+    const s1 = mk((Vh + Vb * K / Q + K * K) / a0, 2 * (K * K - Vh) / a0, (Vh - Vb * K / Q + K * K) / a0, 2 * (K * K - 1) / a0, (1 - K / Q + K * K) / a0);
+    f0 = 38.13547087602444; Q = 0.5003270373238773; K = Math.tan(Math.PI * f0 / sr);
+    const s2 = mk(1, -2, 1, 2 * (K * K - 1) / (1 + K / Q + K * K), (1 - K / Q + K * K) / (1 + K / Q + K * K));
+    const run = (s, x) => { const y = s.b0 * x + s.b1 * s.x1 + s.b2 * s.x2 - s.a1 * s.y1 - s.a2 * s.y2; s.x2 = s.x1; s.x1 = x; s.y2 = s.y1; s.y1 = y; return y; };
+    return x => run(s2, run(s1, x));
+  }
+  class Limiter {
+    constructor(nch, sr, ceil) {
+      this.n = nch; this.L = Math.max(1, Math.round(sr * 0.005)); this.ceil = ceil;
+      this.ring = []; for (let c = 0; c < nch; c++) this.ring.push(new Float32Array(this.L));
+      this.hist = []; for (let c = 0; c < nch; c++) this.hist.push([0, 0, 0]); // last 3 inputs, for inter-sample peak estimate
+      this.pos = 0; this.count = 0; this.idx = 0; this.g = 1;
+      this.qv = []; this.qi = []; this.qh = 0;
+      this.att = 1 - Math.exp(-3 / this.L); this.rel = 1 - Math.exp(-1 / (sr * 0.15));
+    }
+    push(frame, out) {
+      const L = this.L, ceil = this.ceil;
+      let p = 0;
+      for (let c = 0; c < this.n; c++) {
+        const x = frame[c], h = this.hist[c];
+        // 4-point half-sample interpolation catches peaks that form between samples on playback
+        const mid = (-h[0] + 9 * h[1] + 9 * h[2] - x) / 16;
+        const a = Math.max(Math.abs(x), Math.abs(mid) * 1.06);
+        if (a > p) p = a;
+        h[0] = h[1]; h[1] = h[2]; h[2] = x;
+      }
+      const tg = p > ceil ? ceil / p : 1, i = this.idx++;
+      const qv = this.qv, qi = this.qi;
+      while (qv.length > this.qh && qv[qv.length - 1] >= tg) { qv.pop(); qi.pop(); }
+      qv.push(tg); qi.push(i);
+      while (qi[this.qh] < i - L) this.qh++;
+      if (this.qh > 4096) { this.qv = qv.slice(this.qh); this.qi = qi.slice(this.qh); this.qh = 0; }
+      const target = this.qv[this.qh];
+      this.g += (target - this.g) * (target < this.g ? this.att : this.rel);
+      const pos = this.pos, ready = this.count >= L;
+      for (let c = 0; c < this.n; c++) {
+        const old = this.ring[c][pos]; this.ring[c][pos] = frame[c];
+        if (ready) { const y = old * this.g; out[c] = y > ceil ? ceil : y < -ceil ? -ceil : y; }
+      }
+      this.pos = (pos + 1) % L; this.count++;
+      return ready;
+    }
+  }
+  // Integrated loudness meter (BS.1770 gating) fed one frame at a time
+  class LoudMeter {
+    constructor(nch, sr) { this.n = nch; this.kw = []; for (let c = 0; c < nch; c++) this.kw.push(kFilter(sr)); this.sub = Math.round(sr * 0.1); this.acc = 0; this.accN = 0; this.subE = []; }
+    push(frame) {
+      let e = 0; for (let c = 0; c < this.n; c++) { const y = this.kw[c](frame[c]); e += y * y; }
+      this.acc += e; if (++this.accN === this.sub) { this.subE.push(this.acc / this.sub); this.acc = 0; this.accN = 0; }
+    }
+    result() {
+      const lk = e => -0.691 + 10 * Math.log10(e || 1e-12), S = this.subE, blocks = [];
+      for (let i = 0; i + 4 <= S.length; i++) blocks.push((S[i] + S[i + 1] + S[i + 2] + S[i + 3]) / 4);
+      const avg = a => a.reduce((s, x) => s + x, 0) / a.length;
+      const g1 = blocks.filter(e => lk(e) > -70);
+      if (!g1.length) return null;
+      const rel = lk(avg(g1)) - 10, g2 = g1.filter(e => lk(e) > rel);
+      return lk(avg(g2.length ? g2 : g1));
+    }
+  }
+  // Gentle voice compressor: evens out loud and quiet moments before the limiter
+  class Compressor {
+    constructor(sr, thrDb, ratio) { this.thr = thrDb; this.slope = 1 - 1 / ratio; this.env = 0; this.att = 1 - Math.exp(-1 / (sr * 0.008)); this.rel = 1 - Math.exp(-1 / (sr * 0.2)); this.gs = 1; this.gsm = 1 - Math.exp(-1 / (sr * 0.004)); }
+    gain(frame, n) {
+      let p = 0; for (let c = 0; c < n; c++) { const a = frame[c] < 0 ? -frame[c] : frame[c]; if (a > p) p = a; }
+      this.env += (p - this.env) * (p > this.env ? this.att : this.rel);
+      const db = 20 * Math.log10(this.env + 1e-9);
+      const target = db > this.thr ? Math.pow(10, -(db - this.thr) * this.slope / 20) : 1;
+      this.gs += (target - this.gs) * this.gsm;
+      return this.gs;
+    }
+  }
+  // Stream src (spec, frames s..e) through gain [+ compressor] + limiter into a new take; measures output loudness
+  async function renderProcessed(src, spec, s, e, meta, gain, comp, onProg) {
+    const nch = spec.length, sr = src.sampleRate;
+    const nt = { ...meta, id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), sampleRate: sr, channels: nch, frames: 0, created: Date.now(), status: 'processing', tracks: [{ name: 'Main', chans: [...Array(nch).keys()] }] };
+    await store.putTake(nt);
+    const lim = new Limiter(nch, sr, Math.pow(10, -1.5 / 20)), meter = new LoudMeter(nch, sr);
+    const fi = new Float32Array(nch), fo = new Float32Array(nch);
+    const buf = new Int16Array(sr * nch); let bn = 0, idx = 0;
+    const writeOut = async () => {
+      if (!bn) return;
+      await store.putChunk({ takeId: nt.id, idx: idx++, blob: new Blob([buf.slice(0, bn).buffer]) });
+      nt.frames += bn / nch; bn = 0;
+    };
+    const emit = async () => {
+      meter.push(fo);
+      for (let c = 0; c < nch; c++) { const v = fo[c]; buf[bn++] = v < 0 ? v * 0x8000 : v * 0x7fff; }
+      if (bn === buf.length) await writeOut();
+    };
+    let done = 0; const span = Math.max(1, e - s);
+    for await (const b of readBlocks(src, spec, s, e)) {
+      const n = b.data[0].length, d = b.data;
+      for (let i = 0; i < n; i++) {
+        for (let c = 0; c < nch; c++) fi[c] = d[c][i] * gain;
+        if (comp) { const g = comp.gain(fi, nch); for (let c = 0; c < nch; c++) fi[c] *= g; }
+        if (lim.push(fi, fo)) await emit();
+      }
+      done += n; onProg(done / span);
+      await tick();
+    }
+    fi.fill(0);
+    for (let k = 0; k < lim.L; k++) if (lim.push(fi, fo)) await emit();
+    await writeOut();
+    return { take: nt, lufs: meter.result() };
+  }
+
+  async function polishTake(t, sel, onProg) {
+    const spec = specFor(t, sel), nch = spec.length, sr = t.sampleRate;
+    const [from, to] = effRange(t);
+    const total = Math.max(1, to - from);
+    // pass 1: measure loudness + find where the talking starts/ends
+    const meter = new LoudMeter(nch, sr), win = Math.round(sr * 0.05), pk = [];
+    const fr = new Float32Array(nch);
+    let wpk = 0, wN = 0, done = 0;
+    for await (const b of readBlocks(t, spec, from, to)) {
+      const n = b.data[0].length, d = b.data;
+      for (let i = 0; i < n; i++) {
+        let p = 0;
+        for (let c = 0; c < nch; c++) { const x = d[c][i]; fr[c] = x; const ax = x < 0 ? -x : x; if (ax > p) p = ax; }
+        meter.push(fr);
+        if (p > wpk) wpk = p; if (++wN === win) { pk.push(wpk); wpk = 0; wN = 0; }
+      }
+      done += n; onProg(0.3 * done / total, 'Measuring loudness');
+      await tick();
+    }
+    const measured = meter.result();
+    if (measured == null) throw new Error('This take is silent or too short to polish.');
+    const target = nch === 1 ? -19 : -16;
+    const thr = Math.pow(10, -45 / 20);
+    let i0 = pk.findIndex(v => v > thr), i1 = pk.length - 1 - [...pk].reverse().findIndex(v => v > thr);
+    let s = from, e = to;
+    if (i0 >= 0) { s = from + Math.max(0, i0 * win - Math.round(sr * 0.25)); e = from + Math.min(total, (i1 + 1) * win + Math.round(sr * 0.5)); }
+    const meta = {
+      name: t.name + (sel != null && sel !== 'mix' && t.tracks.length > 1 ? ' · ' + t.tracks[+sel].name : '') + ' (polished)',
+      markers: t.markers.map(m => m * sr - s).filter(f => f >= 0 && f <= e - s).map(f => f / sr),
+      notes: t.notes || '', parent: t.id
+    };
+    // pass 2: level + gentle compression + limiter
+    const gain = Math.pow(10, (target - measured) / 20);
+    let r = await renderProcessed(t, spec, s, e, meta, gain, new Compressor(sr, target + 7, 2.5), x => onProg(0.3 + 0.4 * x, 'Polishing'));
+    // pass 3: fine-tune if compression/limiting moved the loudness off target
+    if (r.lufs != null && Math.abs(target - r.lufs) > 0.4) {
+      const first = r.take;
+      r = await renderProcessed(first, [...Array(nch).keys()].map(c => [c]), 0, first.frames, meta, Math.pow(10, (target - r.lufs) / 20), null, x => onProg(0.7 + 0.3 * x, 'Fine-tuning'));
+      await store.delTake(first.id);
+    }
+    const nt = r.take;
+    nt.status = 'done';
+    nt.polished = { target, measured: Math.round(measured * 10) / 10, result: r.lufs == null ? target : Math.round(r.lufs * 10) / 10, cut: Math.round(((s - from) + (to - e)) / sr * 10) / 10 };
+    await store.putTake(nt);
+    return nt;
+  }
+
+  // ---- peaks for the trim editor ----
+  async function overviewPeaks(t, bins) {
+    const spec = [t.tracks.flatMap(x => x.chans)];
+    const per = Math.max(1, Math.ceil(t.frames / bins));
+    const out = new Float32Array(Math.ceil(t.frames / per) || 1);
+    let pos = 0;
+    for await (const b of readBlocks(t, spec, 0, t.frames)) {
+      const d = b.data[0];
+      for (let i = 0; i < d.length; i++, pos++) { const a = d[i] < 0 ? -d[i] : d[i]; const k = (pos / per) | 0; if (a > out[k]) out[k] = a; }
+    }
+    return { peaks: out, per };
+  }
+
+  // ================= HELPERS =================
+  function safe(s) { return (s || '').replace(/[\\/:*?"<>|]+/g, '').replace(/\s+/g, ' ').trim(); }
+  function fileBase(t, sel) {
+    const show = safe($('show').value);
+    const trk = (t.tracks.length > 1 && sel != null && sel !== 'mix') ? safe(t.tracks[+sel].name) : '';
+    return [show, safe(t.name) || 'take', trk].filter(Boolean).join(' - ');
+  }
+  function download(blob, name) {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 120000);
+  }
+  const fmt = s => {
+    s = Math.max(0, Math.floor(s));
+    return [Math.floor(s / 3600), Math.floor(s / 60) % 60, s % 60].map(n => String(n).padStart(2, '0')).join(':');
+  };
+  const fmtShort = s => { s = Math.max(0, s); const m = Math.floor(s / 60), ss = (s % 60); return `${m}:${ss.toFixed(1).padStart(4, '0')}`; };
+  const fmtSize = b => b > 1e9 ? (b / 1e9).toFixed(2) + ' GB' : (b / 1e6).toFixed(1) + ' MB';
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  // ================= TAKES LIST =================
+  const selFor = new Map();
+  const busy = new Set();
+  let renderSeq = 0;
+  async function renderTakes() {
+    const my = ++renderSeq;
+    const list = (await store.allTakes()).filter(t => t.status !== 'processing').sort((a, b) => b.created - a.created);
+    if (my !== renderSeq) return;
+    const ul = $('takes');
+    // keep open panels/players across re-render
+    const openState = new Map();
+    ul.querySelectorAll('.take').forEach(li => openState.set(li.dataset.id, { notes: !!li.querySelector('.notespanel') }));
+    ul.innerHTML = '';
+    $('empty').style.display = list.length ? 'none' : '';
+    for (const t of list) ul.appendChild(takeItem(t, openState.get(t.id)));
+  }
+
+  function takeItem(t, open) {
+    const live = take && take.id === t.id;
+    const tt = live ? take : t;
+    const li = document.createElement('li');
+    li.className = 'take'; li.dataset.id = t.id;
+    const multi = tt.tracks.length > 1;
+    const dur = effFrames(tt) / tt.sampleRate;
+    const fmtDesc = multi ? tt.tracks.map(x => x.name).join(' + ') + ' (separate tracks)' : (tt.channels === 1 ? 'mono' : 'stereo');
+    let badges = '';
+    if (live) badges += '<span class="badge live">recording</span>';
+    if (t.status === 'recovered') badges += '<span class="badge rec" title="Saved from a session that ended unexpectedly">recovered</span>';
+    if (t.polished) badges += `<span class="badge pol" title="Loudness was ${t.polished.measured} LUFS; now ${t.polished.target} LUFS. Trimmed ${t.polished.cut}s of silence.">polished · ${t.polished.target} LUFS</span>`;
+    if (t.trim) badges += '<span class="badge">trimmed</span>';
+    if (busy.has(t.id)) badges += '<span class="badge">working…</span>';
+    li.innerHTML = `
+      <div class="top"><input class="name" type="text"></div>
+      <div class="meta">${fmt(dur)} · ${fmtSize(effFrames(tt) * tt.channels * 2)} · ${esc(fmtDesc)} · ${(tt.sampleRate / 1000).toFixed(1)} kHz · ${new Date(t.created).toLocaleString()}${badges}</div>
+      <div class="btns">
+        <button data-a="play">▶ Listen</button>
+        ${multi ? `<select data-a="sel" title="Which track to download, polish or hear">
+            <option value="mix">Mix (everyone)</option>
+            ${tt.tracks.map((x, i) => `<option value="${i}">${esc(x.name)} only</option>`).join('')}
+          </select>` : ''}
+        <button data-a="wav" title="Lossless, for editing">⬇ WAV</button>
+        <button data-a="mp3" title="Small file for publishing">⬇ MP3</button>
+        <button data-a="polish" title="Make it sound good: podcast loudness, peak limiting, trims silence at the ends. Creates a new take; the original is kept.">✨ Polish</button>
+        <button data-a="trim">✂ Trim</button>
+        <button data-a="notes">📝 Notes</button>
+        <button data-a="marks" title="Labels file you can import into Audacity (File › Import › Labels)">⬇ Markers (${tt.markers.length})</button>
+        <button data-a="del" class="danger">Delete</button>
+      </div>
+      <div class="prog"></div>`;
+    const nameEl = li.querySelector('.name');
+    nameEl.value = tt.name;
+    nameEl.addEventListener('change', async () => {
+      const v = nameEl.value.trim() || tt.name;
+      if (live) take.name = v; else { t.name = v; await store.putTake(t); }
+    });
+    const sel = li.querySelector('[data-a=sel]');
+    if (sel) { sel.value = selFor.get(t.id) || 'mix'; sel.onchange = () => selFor.set(t.id, sel.value); }
+    const curSel = () => sel ? sel.value : null;
+    const prog = li.querySelector('.prog');
+    const btns = [...li.querySelectorAll('.btns button, .btns select')];
+    if (live) btns.forEach(b => b.disabled = true);
+    if (busy.has(t.id)) btns.forEach(b => { if (b.dataset.a !== 'notes') b.disabled = true; });
+
+    const run = async (label, fn) => {
+      if (busy.has(t.id)) return;
+      busy.add(t.id); btns.forEach(b => b.disabled = true);
+      prog.textContent = label + '…';
+      try { await fn(p => { prog.textContent = `${label}… ${Math.round(p * 100)}%`; }); prog.textContent = ''; }
+      catch (e) { prog.textContent = ''; showErr(e && e.message || String(e)); }
+      finally { busy.delete(t.id); btns.forEach(b => b.disabled = false); }
+    };
+
+    li.querySelector('[data-a=play]').onclick = async (e) => {
+      const ex = li.querySelector('audio');
+      if (ex) { URL.revokeObjectURL(ex.src); ex.remove(); e.target.textContent = '▶ Listen'; return; }
+      await run('Loading', async (p) => {
+        const blob = await makeWav(t, curSel(), null, null, p);
+        const au = document.createElement('audio');
+        au.controls = true; au.src = URL.createObjectURL(blob);
+        li.insertBefore(au, prog.nextSibling);
+        au.play().catch(() => {});
+      });
+      if (li.querySelector('audio')) e.target.textContent = 'Hide player';
+    };
+    li.querySelector('[data-a=wav]').onclick = () => run('Preparing WAV', async (p) => {
+      download(await makeWav(t, curSel(), null, null, p), fileBase(t, curSel()) + '.wav');
+    });
+    li.querySelector('[data-a=mp3]').onclick = () => run('Encoding MP3', async (p) => {
+      prog.textContent = 'Loading MP3 encoder…';
+      const blob = await makeMp3(t, curSel(), p);
+      download(blob, fileBase(t, curSel()) + '.mp3');
+    });
+    li.querySelector('[data-a=polish]').onclick = () => run('Polishing', async (p) => {
+      const nt = await polishTake(t, curSel(), (x, what) => { prog.textContent = `${what}… ${Math.round(x * 100)}%`; });
+      okMsg(`Created "${nt.name}": loudness ${nt.polished.measured} → ${nt.polished.result} LUFS, ${nt.polished.cut}s of silence trimmed. Your original take is untouched.`);
+      setTimeout(renderTakes);
+    });
+    li.querySelector('[data-a=trim]').onclick = () => toggleTrim(li, t);
+    li.querySelector('[data-a=notes]').onclick = () => toggleNotes(li, t);
+    li.querySelector('[data-a=marks]').onclick = () => {
+      const ms = shiftedMarkers(t);
+      if (!ms.length) { prog.textContent = 'No markers in this take. Press M while recording to add one.'; setTimeout(() => prog.textContent = '', 3000); return; }
+      const txt = ms.map((m, i) => `${m.toFixed(3)}\t${m.toFixed(3)}\tMarker ${i + 1} (${fmt(m)})`).join('\n') + '\n';
+      download(new Blob([txt], { type: 'text/plain' }), fileBase(t) + ' - markers.txt');
+    };
+    const del = li.querySelector('[data-a=del]');
+    del.onclick = async () => {
+      if (!del.classList.contains('confirm')) {
+        del.classList.add('confirm'); del.textContent = 'Delete forever?';
+        setTimeout(() => { del.classList.remove('confirm'); del.textContent = 'Delete'; }, 3500);
+        return;
+      }
+      await store.delTake(t.id);
+      renderTakes(); showStorage();
+    };
+    if (open && open.notes && !live) toggleNotes(li, t);
+    return li;
+  }
+  const shiftedMarkers = t => { const [a, b] = effRange(t); return t.markers.map(m => m - a / t.sampleRate).filter(m => m >= 0 && m <= (b - a) / t.sampleRate); };
+
+  // ---- notes panel ----
+  function toggleNotes(li, t) {
+    const ex = li.querySelector('.notespanel');
+    if (ex) { ex.remove(); return; }
+    const p = document.createElement('div');
+    p.className = 'panel notespanel';
+    p.innerHTML = `<h3>Notes</h3><textarea placeholder="Show notes, guest names, links, things to fix in the edit…"></textarea>
+      <div class="trimrow"><span class="saved"></span><div class="btns"><button data-a="dl">⬇ Download notes</button></div></div>`;
+    const ta = p.querySelector('textarea'); ta.value = t.notes || '';
+    let tm;
+    ta.oninput = () => {
+      clearTimeout(tm);
+      tm = setTimeout(async () => { t.notes = ta.value; await store.putTake(t); p.querySelector('.saved').textContent = 'Saved'; setTimeout(() => p.querySelector('.saved').textContent = '', 1500); }, 400);
+    };
+    p.querySelector('[data-a=dl]').onclick = () => {
+      t.notes = ta.value;
+      const ms = shiftedMarkers(t);
+      const lines = [
+        `Episode: ${$('show').value || '(untitled)'}`,
+        `Take: ${t.name}`,
+        `Recorded: ${new Date(t.created).toLocaleString()}`,
+        `Length: ${fmt(effFrames(t) / t.sampleRate)}${t.trim ? ' (trimmed)' : ''}`,
+        '',
+        'Markers:', ...(ms.length ? ms.map((m, i) => `  ${fmt(m)}  Marker ${i + 1}`) : ['  (none)']),
+        '',
+        'Notes:', t.notes || '(none)', ''
+      ];
+      download(new Blob([lines.join('\r\n')], { type: 'text/plain' }), fileBase(t) + ' - notes.txt');
+    };
+    li.appendChild(p);
+    ta.focus();
+  }
+
+  // ---- trim panel ----
+  async function toggleTrim(li, t) {
+    const ex = li.querySelector('.trimpanel');
+    if (ex) { ex.remove(); return; }
+    const p = document.createElement('div');
+    p.className = 'panel trimpanel';
+    p.innerHTML = `<h3>Trim: drag the handles to cut the start and end</h3>
+      <canvas class="trimcv"></canvas>
+      <div class="trimrow"><span class="times">Loading waveform…</span>
+        <div class="btns">
+          <button data-a="ps">▶ Hear start</button><button data-a="pe">▶ Hear end</button>
+          <button data-a="reset">Reset</button><button data-a="save" class="primary">Save trim</button>
+        </div></div>`;
+    li.appendChild(p);
+    const cv = p.querySelector('canvas'), g = cv.getContext('2d');
+    const { peaks, per } = await overviewPeaks(t, 900);
+    const sr = t.sampleRate, N = t.frames;
+    let [s, e] = effRange(t);
+    let cursor = -1, player = null;
+    const dpr = devicePixelRatio || 1;
+    const draw = () => {
+      const r = cv.getBoundingClientRect();
+      cv.width = Math.round(r.width * dpr); cv.height = Math.round(r.height * dpr);
+      const W = cv.width, H = cv.height;
+      g.clearRect(0, 0, W, H);
+      const xs = s / N * W, xe = e / N * W;
+      for (let x = 0; x < W; x++) {
+        const k = Math.floor(x / W * peaks.length), v = peaks[k] || 0;
+        const h = Math.max(dpr, Math.sqrt(v) * H * 0.9);
+        g.fillStyle = (x < xs || x > xe) ? '#34373d' : '#ff7a6e';
+        g.fillRect(x, (H - h) / 2, 1, h);
+      }
+      g.fillStyle = 'rgba(0,0,0,.45)'; g.fillRect(0, 0, xs, H); g.fillRect(xe, 0, W - xe, H);
+      for (const x of [xs, xe]) { g.fillStyle = '#fff'; g.fillRect(x - dpr, 0, 2 * dpr, H); g.fillRect(x - 5 * dpr, 0, 10 * dpr, 10 * dpr); g.fillRect(x - 5 * dpr, H - 10 * dpr, 10 * dpr, 10 * dpr); }
+      if (cursor >= 0) { g.fillStyle = '#5aa9ff'; g.fillRect(cursor / N * W, 0, 1.5 * dpr, H); }
+      const ms = t.markers.map(m => m * sr / N * W);
+      g.fillStyle = '#ffb23d'; for (const x of ms) g.fillRect(x, 0, dpr, 8 * dpr);
+      p.querySelector('.times').textContent = `Start ${fmtShort(s / sr)} · End ${fmtShort(e / sr)} · Length ${fmt((e - s) / sr)}`;
+    };
+    draw();
+    let drag = null;
+    const fx = ev => { const r = cv.getBoundingClientRect(); return Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)) * N; };
+    cv.onpointerdown = ev => {
+      const f = fx(ev);
+      drag = Math.abs(f - s) <= Math.abs(f - e) ? 's' : 'e';
+      cv.setPointerCapture(ev.pointerId); cv.onpointermove(ev);
+    };
+    cv.onpointermove = ev => {
+      if (!drag) return;
+      const f = Math.round(fx(ev)), minLen = Math.round(sr * 0.5);
+      if (drag === 's') s = Math.max(0, Math.min(f, e - minLen)); else e = Math.min(N, Math.max(f, s + minLen));
+      draw();
+    };
+    cv.onpointerup = () => { drag = null; };
+    const preview = async (a, b) => {
+      if (player) { player.pause(); URL.revokeObjectURL(player.src); }
+      const blob = await makeWav(t, null, a, b);
+      player = new Audio(URL.createObjectURL(blob));
+      const t0 = a;
+      player.ontimeupdate = () => { cursor = t0 + player.currentTime * sr; draw(); };
+      player.onended = () => { cursor = -1; draw(); };
+      player.play().catch(() => {});
+    };
+    p.querySelector('[data-a=ps]').onclick = () => preview(s, Math.min(e, s + 6 * sr));
+    p.querySelector('[data-a=pe]').onclick = () => preview(Math.max(s, e - 6 * sr), e);
+    p.querySelector('[data-a=reset]').onclick = () => { s = 0; e = N; draw(); };
+    p.querySelector('[data-a=save]').onclick = async () => {
+      if (player) player.pause();
+      t.trim = (s <= 0 && e >= N) ? null : { start: s, end: e };
+      if (!t.trim) delete t.trim;
+      await store.putTake(t);
+      okMsg(t.trim ? `Trimmed "${t.name}" to ${fmt((e - s) / sr)}. Listen, WAV, MP3 and Polish all use the trimmed version; Reset brings the full take back.` : `"${t.name}" is back to full length.`);
+      renderTakes();
+    };
+    new ResizeObserver(draw).observe(cv);
+  }
+
+  async function recoverTakes() {
+    const list = await store.allTakes();
+    for (const t of list) {
+      if (t.status === 'recording' || t.status === 'processing') {
+        const chunks = await store.getChunks(t.id);
+        const bytes = chunks.reduce((s, c) => s + c.blob.size, 0);
+        if (t.status === 'processing' || !bytes) { await store.delTake(t.id); continue; }
+        t.frames = bytes / (2 * t.channels);
+        t.status = 'recovered';
+        await store.putTake(t);
+      }
+    }
+  }
+
+  // ================= SOUNDBOARD =================
+  const PAD_DEFAULTS = [
+    { id: 'p1', name: 'Intro theme', kind: 'builtin', builtin: 'intro', vol: 0.8 },
+    { id: 'p2', name: 'Transition whoosh', kind: 'builtin', builtin: 'whoosh', vol: 0.8 },
+    { id: 'p3', name: 'Sting', kind: 'builtin', builtin: 'sting', vol: 0.8 },
+    { id: 'p4', name: 'Outro theme', kind: 'builtin', builtin: 'outro', vol: 0.8 }
+  ];
+  let pads = PAD_DEFAULTS.map(p => ({ ...p }));
+  const padBuf = new Map(), padPlay = new Map();
+  let padTarget = null;
+
+  async function synth(kind, sr) {
+    const hz = m => 440 * Math.pow(2, (m - 69) / 12);
+    const dur = { intro: 7.2, outro: 7.8, whoosh: 1.6, sting: 3 }[kind];
+    const oc = new OfflineAudioContext(2, Math.ceil(sr * dur), sr);
+    const master = oc.createGain(); master.gain.value = 0.6;
+    const comp = oc.createDynamicsCompressor(); master.connect(comp); comp.connect(oc.destination);
+    const note = (f, t, d, type, v) => {
+      const o = oc.createOscillator(); o.type = type; o.frequency.value = f;
+      const g = oc.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(v, t + 0.012); g.gain.exponentialRampToValueAtTime(0.0008, t + d);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + d + 0.05);
+    };
+    const kick = t => {
+      const o = oc.createOscillator(), g = oc.createGain();
+      o.frequency.setValueAtTime(130, t); o.frequency.exponentialRampToValueAtTime(42, t + 0.14);
+      g.gain.setValueAtTime(0.55, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.22);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + 0.25);
+    };
+    if (kind === 'intro' || kind === 'outro') {
+      const prog = kind === 'intro' ? [[60, 64, 67], [57, 60, 64], [53, 57, 60], [55, 59, 62]] : [[53, 57, 60], [55, 59, 62], [60, 64, 67]];
+      const beat = 0.42; let t = 0.05;
+      for (const ch of prog) {
+        for (let k = 0; k < 4; k++) {
+          ch.forEach((m, j) => note(hz(m + (k % 2 ? 12 : 0)), t + k * beat + j * 0.06, beat * 1.7, 'triangle', 0.1));
+          kick(t + k * beat);
+        }
+        note(hz(ch[0] - 24), t, beat * 4, 'sine', 0.32);
+        t += beat * 4;
+      }
+      if (kind === 'intro') { [72, 76, 79].forEach((m, j) => note(hz(m), t + j * 0.05, 0.9, 'sine', 0.12)); kick(t); }
+      else { [60, 64, 67, 72, 76].forEach((m, j) => note(hz(m), t + j * 0.07, 2.4, 'sine', 0.11)); note(hz(36), t, 2.4, 'sine', 0.3); kick(t); }
+    } else if (kind === 'whoosh') {
+      const n = oc.createBuffer(1, Math.ceil(sr * dur), sr), d = n.getChannelData(0);
+      for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+      const src = oc.createBufferSource(); src.buffer = n;
+      const bp = oc.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 1.4;
+      bp.frequency.setValueAtTime(250, 0); bp.frequency.exponentialRampToValueAtTime(5000, dur * 0.6); bp.frequency.exponentialRampToValueAtTime(1200, dur);
+      const g = oc.createGain(); g.gain.setValueAtTime(0.0001, 0); g.gain.exponentialRampToValueAtTime(0.9, dur * 0.55); g.gain.exponentialRampToValueAtTime(0.0005, dur);
+      src.connect(bp); bp.connect(g); g.connect(master); src.start(0);
+    } else if (kind === 'sting') {
+      [67, 72, 76, 79].forEach((m, j) => {
+        [[1, 0.13], [2.76, 0.05], [5.4, 0.025]].forEach(([r, v]) => note(hz(m) * r, 0.02 + j * 0.09, 2.6 / Math.sqrt(r), 'sine', v));
+      });
+    }
+    return oc.startRendering();
+  }
+
+  async function padBuffer(p) {
+    if (padBuf.has(p.id)) return padBuf.get(p.id);
+    await ensureContext();
+    let b = null;
+    if (p.kind === 'builtin') b = await synth(p.builtin, ctx.sampleRate);
+    else if (p.kind === 'file' && p.blob) b = await ctx.decodeAudioData(await p.blob.arrayBuffer());
+    if (b) padBuf.set(p.id, b);
+    return b;
+  }
+  async function playPad(i) {
+    const p = pads[i];
+    if (!p || editingPad === p.id) return;
+    if (padPlay.has(p.id)) { stopPad(p.id); return; }
+    if (p.kind === 'empty') { padTarget = p.id; $('padfile').click(); return; }
+    try {
+      const b = await padBuffer(p);
+      if (!b) return;
+      const src = ctx.createBufferSource(); src.buffer = b;
+      const g = ctx.createGain(); g.gain.value = p.vol;
+      src.connect(g); g.connect(sbBus);
+      src.onended = () => { if (padPlay.get(p.id)?.src === src) padPlay.delete(p.id); renderPadsState(); };
+      src.start();
+      padPlay.set(p.id, { src, g, t0: ctx.currentTime, dur: b.duration });
+      renderPadsState();
+    } catch (e) { showErr('Couldn\'t play "' + p.name + '": ' + (e && e.message || e)); }
+  }
+  function stopPad(id) {
+    const pp = padPlay.get(id);
+    if (!pp) return;
+    const t = ctx.currentTime;
+    pp.g.gain.setTargetAtTime(0, t, 0.05);
+    try { pp.src.stop(t + 0.3); } catch (e) {}
+    padPlay.delete(id);
+    renderPadsState();
+  }
+
+  let editingPad = null;
+  function renderPads() {
+    const box = $('pads'); box.innerHTML = '';
+    pads.forEach((p, i) => {
+      const el = document.createElement('div');
+      el.className = 'pad' + (p.kind === 'empty' ? ' empty' : '') + (editingPad === p.id ? ' editing' : '');
+      el.dataset.id = p.id;
+      const key = i < 9 ? i + 1 : '';
+      if (editingPad === p.id) {
+        el.innerHTML = `
+          <div class="edit">
+            <label class="k">Name</label>
+            <input type="text" class="pname" maxlength="40">
+            <div class="ebtns">
+              <button data-a="replace" title="Swap in a different sound file">Replace sound</button>
+              <button data-a="delete" class="danger">Delete</button>
+            </div>
+            <button data-a="done" class="primary">Done</button>
+          </div>`;
+        const nm = el.querySelector('.pname');
+        nm.value = p.kind === 'empty' ? '' : p.name;
+        nm.placeholder = 'Sound name';
+        const commit = () => { const v = nm.value.trim(); if (v && v !== p.name) { p.name = v; savePad(p); } };
+        nm.onchange = commit;
+        nm.onkeydown = e => { if (e.key === 'Enter') { commit(); editingPad = null; renderPads(); } if (e.key === 'Escape') { editingPad = null; renderPads(); } };
+        el.querySelector('[data-a=replace]').onclick = () => { commit(); padTarget = p.id; $('padfile').click(); };
+        const del = el.querySelector('[data-a=delete]');
+        del.onclick = async () => {
+          if (!del.classList.contains('confirm')) {
+            del.classList.add('confirm'); del.textContent = 'Sure?';
+            setTimeout(() => { if (del.isConnected) { del.classList.remove('confirm'); del.textContent = 'Delete'; } }, 3000);
+            return;
+          }
+          stopPad(p.id); padBuf.delete(p.id);
+          pads = pads.filter(x => x.id !== p.id);
+          editingPad = null;
+          await store.delPad(p.id); await savePadOrder();
+          renderPads();
+        };
+        el.querySelector('[data-a=done]').onclick = () => { commit(); editingPad = null; renderPads(); };
+        box.appendChild(el);
+        setTimeout(() => nm.focus());
+        return;
+      }
+      el.innerHTML = `<div class="bar"></div>
+        <button class="hit"><span class="k">${key}</span><span class="nm"></span></button>
+        <div class="ft"><input type="range" min="0" max="150" title="Pad volume"><button data-a="edit" title="Rename, replace or delete this sound">✎ Edit</button></div>`;
+      el.querySelector('.nm').textContent = p.kind === 'empty' ? '＋ Load a sound' : p.name;
+      const vol = el.querySelector('input');
+      vol.value = Math.round(p.vol * 100);
+      vol.oninput = () => { p.vol = vol.value / 100; const pp = padPlay.get(p.id); if (pp) pp.g.gain.value = p.vol; };
+      vol.onchange = () => savePad(p);
+      el.querySelector('.hit').onclick = () => playPad(i);
+      el.querySelector('[data-a=edit]').onclick = () => { editingPad = p.id; renderPads(); };
+      box.appendChild(el);
+    });
+    // "Add sound" tile
+    const add = document.createElement('button');
+    add.className = 'pad addpad';
+    add.innerHTML = '<span class="plus">＋</span><span>Add sound</span><span class="k">MP3, WAV, M4A…</span>';
+    add.onclick = () => { padTarget = '__new'; $('padfile').click(); };
+    box.appendChild(add);
+    const missing = PAD_DEFAULTS.filter(d => !pads.some(p => p.builtin === d.builtin));
+    $('sbrestore').classList.toggle('hidden', !missing.length);
+    renderPadsState();
+  }
+  function renderPadsState() {
+    document.querySelectorAll('.pad[data-id]').forEach(el => el.classList.toggle('playing', padPlay.has(el.dataset.id)));
+  }
+  async function savePad(p) {
+    const rec = { id: p.id, name: p.name, kind: p.kind, builtin: p.builtin, vol: p.vol };
+    if (p.blob) rec.blob = p.blob;
+    await store.putPad(rec);
+  }
+  const savePadOrder = () => store.putPad({ id: '__order', ids: pads.map(p => p.id) });
+
+  $('padfile').onchange = async () => {
+    const f = $('padfile').files[0];
+    $('padfile').value = '';
+    if (!f) return;
+    let p;
+    if (padTarget === '__new') p = { id: 'u' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), vol: 0.8 };
+    else p = pads.find(x => x.id === padTarget);
+    if (!p) return;
+    try {
+      await ensureContext();
+      const b = await ctx.decodeAudioData(await f.arrayBuffer());
+      stopPad(p.id);
+      p.kind = 'file'; p.blob = f; p.name = f.name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ').slice(0, 40); delete p.builtin;
+      padBuf.set(p.id, b);
+      if (padTarget === '__new') pads.push(p);
+      editingPad = null;
+      await savePad(p); await savePadOrder();
+      renderPads();
+      okMsg(`Added "${p.name}" to the soundboard${pads.indexOf(p) < 9 ? ` (key ${pads.indexOf(p) + 1})` : ''}. Use ✎ Edit to rename or delete it.`);
+    } catch (e) { showErr('Couldn\'t load "' + f.name + '". Try an MP3, WAV or M4A file.'); }
+  };
+  $('sbrestore').onclick = async () => {
+    for (const [i, d] of PAD_DEFAULTS.entries()) {
+      if (pads.some(p => p.builtin === d.builtin)) continue;
+      const p = { ...d };
+      if (pads.some(x => x.id === p.id)) p.id = 'b' + Date.now().toString(36) + i;
+      pads.splice(Math.min(i, pads.length), 0, p);
+      await savePad(p);
+    }
+    await savePadOrder(); renderPads();
+  };
+  async function loadPads() {
+    try {
+      const saved = await store.allPads();
+      const order = saved.get('__order');
+      if (order && Array.isArray(order.ids)) {
+        pads = order.ids.map(id => {
+          const s = saved.get(id), d = PAD_DEFAULTS.find(x => x.id === id);
+          return s ? { ...(d || {}), ...s } : d ? { ...d } : null;
+        }).filter(Boolean);
+      } else {
+        // first run (or older version): built-ins, plus any sounds already loaded onto pads
+        pads = PAD_DEFAULTS.map(d => { const s = saved.get(d.id); return s ? { ...d, ...s } : { ...d }; });
+        for (const [id, s] of [...saved].sort()) if (id !== '__order' && !PAD_DEFAULTS.some(d => d.id === id) && s.kind === 'file') pads.push({ vol: 0.8, ...s });
+      }
+    } catch (e) {}
+    renderPads();
+  }
+
+  // ================= UI =================
+  function setStatus() {
+    const s = $('status');
+    if (state === 'off') s.textContent = 'Microphone off';
+    else if (state === 'ready') s.textContent = 'Mic is live. Press the red Record button to start a take.';
+    else if (state === 'countdown') s.textContent = 'Get ready…';
+    else if (state === 'recording') s.textContent = `Recording ${take.name}` + (take.markers.length ? ` · ${take.markers.length} marker${take.markers.length > 1 ? 's' : ''}` : '');
+    else if (state === 'paused') s.textContent = `Paused · ${take.name}. Press Resume to continue.`;
+  }
+  function ui() {
+    const rec = $('rec');
+    rec.disabled = state === 'off';
+    rec.classList.toggle('isrec', state === 'recording');
+    rec.classList.toggle('cd', state === 'countdown');
+    const label = state === 'recording' ? 'Pause' : state === 'paused' ? 'Resume' : state === 'countdown' ? 'Cancel' : 'Record';
+    $('reclabel').textContent = label;
+    rec.setAttribute('aria-label', label);
+    $('mark').disabled = !take; $('stop').disabled = !take;
+    $('mark').title = take ? 'Drop a marker (M)' : 'Press Record first';
+    $('stop').title = take ? 'Finish and save this take (S)' : 'Press Record first';
+    const locked = !!take || state === 'countdown';
+    $('ch').disabled = locked; $('dual').disabled = locked;
+    $('livenotes').disabled = !take;
+    const oa = $('onair');
+    oa.classList.toggle('live', state === 'recording');
+    oa.classList.toggle('paused', state === 'paused');
+    oa.textContent = state === 'paused' ? 'Paused' : 'On Air';
+    if (!take) { $('timer').textContent = '00:00:00'; $('timer').classList.remove('goal'); }
+    setStatus(); updateGoal();
+  }
+  let goalHit = false;
+  function updateGoal() {
+    const gm = parseFloat($('goalmin').value);
+    const el = $('goal');
+    if (!(gm > 0)) { el.textContent = ''; $('timer').classList.remove('goal'); return; }
+    const goal = gm * 60;
+    const cur = take ? take.frames / take.sampleRate : 0;
+    if (cur >= goal) el.textContent = `Goal ${fmt(goal)} reached ✓ (+${fmt(cur - goal)})`;
+    else el.textContent = `Goal ${fmt(goal)} · ${fmt(goal - cur)} to go`;
+    if (take && !goalHit && cur >= goal) {
+      goalHit = true;
+      $('timer').classList.add('goal');
+      if ($('goalsound').checked) chime();
+      $('status').textContent = `You've hit your ${gm}-minute goal. Wrap up whenever you're ready.`;
+    }
+  }
+
+  // meters + waveform
+  let meters = [];
+  const pct = db => Math.max(0, Math.min(100, (db - MIN_DB) / -MIN_DB * 100));
+  function renderMeters() {
+    const defs = isDual()
+      ? [{ label: $('n1').value || 'Host', an: () => mics[0].an }, { label: $('n2').value || 'Guest', an: () => mics[1].an }]
+      : [{ label: 'Level', an: () => anMix }];
+    const box = $('meters'); box.innerHTML = '';
+    meters = defs.map(d => {
+      const row = document.createElement('div');
+      row.className = 'meterwrap';
+      row.innerHTML = `<div class="mlabel"></div><div class="meter"><div class="zone"></div><div class="fill"></div><div class="peak"></div></div><div class="db">−∞ dB</div><div class="clip" title="Clip light"></div>`;
+      row.querySelector('.mlabel').textContent = d.label;
+      const z = row.querySelector('.zone'); z.style.left = pct(-12) + '%'; z.style.width = (pct(-6) - pct(-12)) + '%';
+      box.appendChild(row);
+      return { an: d.an, fill: row.querySelector('.fill'), peak: row.querySelector('.peak'), db: row.querySelector('.db'), clip: row.querySelector('.clip'), hold: -Infinity, holdT: 0, clipT: 0, buf: null };
+    });
+  }
+  const cv = $('wave'), g = cv.getContext('2d');
+  let hist = [], lastHistPush = 0, mixBuf = null;
+  function sizeCanvas() { const r = cv.getBoundingClientRect(), d = devicePixelRatio || 1; cv.width = Math.round(r.width * d); cv.height = Math.round(r.height * d); }
+  sizeCanvas(); addEventListener('resize', sizeCanvas);
+  const peakOf = (an, buf) => { an.getFloatTimeDomainData(buf); let p = 0; for (let i = 0; i < buf.length; i++) { const a = buf[i] < 0 ? -buf[i] : buf[i]; if (a > p) p = a; } return p; };
+
+  function frame(now) {
+    const live = !!ctx;
+    for (const m of meters) {
+      const an = live ? m.an() : null;
+      let peak = 0;
+      if (an) { if (!m.buf) m.buf = new Float32Array(an.fftSize); peak = peakOf(an, m.buf); }
+      const db = peak > 0 ? 20 * Math.log10(peak) : -Infinity;
+      const p = pct(db);
+      m.fill.style.width = p + '%';
+      m.fill.style.setProperty('--w', (p ? 100 / (p / 100) : 100) + '%');
+      if (db > m.hold || now - m.holdT > 1500) { m.hold = db; m.holdT = now; }
+      m.peak.style.left = `calc(${pct(m.hold)}% - 1px)`;
+      m.db.textContent = isFinite(m.hold) && m.hold > MIN_DB ? m.hold.toFixed(1) + ' dB' : '−∞ dB';
+      if (peak >= 0.995) m.clipT = now;
+      m.clip.classList.toggle('on', now - m.clipT < 1500);
+    }
+    let mp = 0;
+    if (anMix) { if (!mixBuf) mixBuf = new Float32Array(anMix.fftSize); mp = peakOf(anMix, mixBuf); }
+    if (now - lastHistPush > 33) { hist.push({ v: mp, r: state === 'recording' }); lastHistPush = now; }
+    const W = cv.width, H = cv.height, d = devicePixelRatio || 1, step = 3 * d;
+    const cols = Math.ceil(W / step);
+    if (hist.length > cols) hist.splice(0, hist.length - cols);
+    g.clearRect(0, 0, W, H);
+    g.fillStyle = '#1b1d21'; g.fillRect(0, H / 2 - d / 2, W, d);
+    for (let i = 0; i < hist.length; i++) {
+      const x = W - (hist.length - i) * step, v = hist[i].v;
+      const hh = Math.max(d, Math.sqrt(v) * (H * 0.9));
+      g.fillStyle = v >= 0.995 ? '#ff4a3d' : hist[i].r ? '#ff7a6e' : '#4a4e55';
+      g.fillRect(x, (H - hh) / 2, step - d, hh);
+    }
+    if (take) { $('timer').textContent = fmt(take.frames / take.sampleRate); updateGoal(); }
+    // pad progress
+    for (const [id, pp] of padPlay) {
+      const el = document.querySelector(`.pad[data-id="${id}"] .bar`);
+      if (el) el.style.width = Math.min(100, (ctx.currentTime - pp.t0) / pp.dur * 100) + '%';
+    }
+    document.querySelectorAll('.pad:not(.playing) .bar').forEach(b => b.style.width = '0');
+    requestAnimationFrame(frame);
+  }
+
+  // ---- messages / storage info ----
+  addEventListener('error', e => showErr('Something went wrong: ' + (e.message || e.error) + '. Tell Claude this message and it can fix it.'));
+  addEventListener('unhandledrejection', e => showErr('Something went wrong: ' + (e.reason && e.reason.message || e.reason) + '. Tell Claude this message and it can fix it.'));
+  let okTimer;
+  function showErr(m) { const e = $('err'); e.classList.remove('ok'); e.textContent = m; e.classList.add('show'); clearTimeout(okTimer); }
+  function okMsg(m) { const e = $('err'); e.textContent = m; e.classList.add('show', 'ok'); clearTimeout(okTimer); okTimer = setTimeout(hideErr, 9000); }
+  function hideErr() { $('err').classList.remove('show', 'ok'); }
+  async function showStorage() {
+    try {
+      if (navigator.storage && navigator.storage.estimate) {
+        const { quota, usage } = await navigator.storage.estimate();
+        const mins = (quota - usage) / (48000 * 2 * capChannels()) / 60;
+        $('foot').textContent = `Recordings are lossless 16-bit WAV and never leave your computer · Space for about ${mins > 600 ? Math.round(mins / 60) + ' hours' : Math.round(mins) + ' minutes'} more at the current setting.`;
+      }
+    } catch (e) {}
+  }
+
+  // ================= WIRING =================
+  $('enable').onclick = enableMic;
+  $('dev').onchange = () => { if (mics[0].stream) enableMic(); };
+  $('dev2').onchange = () => { if (mics[0].stream) enableMic(); };
+  ['ec', 'ns', 'agc'].forEach(id => $(id).onchange = () => { if (mics[0].stream) enableMic(); });
+  $('ch').onchange = () => { showStorage(); if (mics[0].stream) enableMic(); };
+  $('dual').onchange = async () => {
+    $('dualbox').classList.toggle('hidden', !isDual());
+    $('chwrap').classList.toggle('hidden', isDual());
+    $('lbl1').textContent = isDual() ? 'Your microphone' : 'Microphone';
+    renderMeters(); showStorage();
+    if (isDual() && mics[0].stream && !$('dev2').value) {
+      await listDevices();
+      const d1 = mics[0].stream.getAudioTracks()[0].getSettings().deviceId;
+      const other = [...$('dev2').options].find(o => o.value && o.value !== d1 && o.value !== 'default' && o.value !== 'communications');
+      if (other) $('dev2').value = other.value;
+    }
+    if (mics[0].stream) enableMic();
+  };
+  ['n1', 'n2'].forEach(id => $(id).oninput = () => { if (isDual()) meters.forEach((m, i) => { const l = $('meters').children[i]?.querySelector('.mlabel'); if (l) l.textContent = $(i ? 'n2' : 'n1').value || (i ? 'Guest' : 'Host'); }); });
+  $('mon').onchange = async () => {
+    $('monnote').classList.toggle('hidden', !$('mon').checked);
+    if ($('mon').checked) await ensureContext();
+    if (monGain) monGain.gain.setTargetAtTime($('mon').checked ? 1 : 0, ctx.currentTime, 0.02);
+  };
+  $('gain').oninput = () => { $('gainv').textContent = $('gain').value + '%'; if (ctx) mics[0].gain.gain.setTargetAtTime($('gain').value / 100, ctx.currentTime, 0.02); };
+  $('gain2').oninput = () => { $('gainv2').textContent = $('gain2').value + '%'; if (ctx) mics[1].gain.gain.setTargetAtTime($('gain2').value / 100, ctx.currentTime, 0.02); };
+  $('sbvol').oninput = () => { if (sbBus) sbBus.gain.setTargetAtTime($('sbvol').value / 100, ctx.currentTime, 0.02); };
+  $('sbstop').onclick = () => [...padPlay.keys()].forEach(stopPad);
+  $('rec').onclick = () => {
+    if (state === 'ready') beginRecord();
+    else if (state === 'countdown') cancelCountdown();
+    else togglePause();
+  };
+  $('stop').onclick = stopTake;
+  $('mark').onclick = addMarker;
+  $('livenotes').oninput = () => { if (take) take.notes = $('livenotes').value; };
+  $('goalmin').oninput = () => { goalHit = take ? (take.frames / take.sampleRate >= parseFloat($('goalmin').value) * 60) : false; if (!goalHit) $('timer').classList.remove('goal'); updateGoal(); try { localStorage.setItem('pr-goal', $('goalmin').value); } catch (e) {} };
+  try {
+    $('show').value = localStorage.getItem('pr-show') || '';
+    $('goalmin').value = localStorage.getItem('pr-goal') || '';
+    const cdon = localStorage.getItem('pr-cd'); if (cdon != null) $('cdon').checked = cdon === '1';
+  } catch (e) {}
+  $('show').oninput = () => { try { localStorage.setItem('pr-show', $('show').value); } catch (e) {} };
+  $('cdon').onchange = () => { try { localStorage.setItem('pr-cd', $('cdon').checked ? '1' : '0'); } catch (e) {} };
+
+  addEventListener('keydown', e => {
+    if (e.target.closest('input,select,textarea') && e.target.type !== 'checkbox' && e.target.type !== 'range') return;
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.code === 'Space') { e.preventDefault(); if (!$('rec').disabled) $('rec').click(); }
+    else if (e.key === 'm' || e.key === 'M') addMarker();
+    else if (e.key === 's' || e.key === 'S') { if (take) stopTake(); }
+    else if (/^[1-9]$/.test(e.key)) playPad(+e.key - 1);
+  });
+  addEventListener('beforeunload', e => { if (take) { flush(); e.preventDefault(); e.returnValue = ''; } });
+  if (navigator.mediaDevices && navigator.mediaDevices.addEventListener)
+    navigator.mediaDevices.addEventListener('devicechange', () => { if (mics[0].stream) listDevices(); });
+
+  renderMeters();
+  requestAnimationFrame(frame);
+  (async () => {
+    try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
+    await recoverTakes().catch(() => {});
+    try { takeCount = (await store.allTakes()).filter(t => !t.polished).length; } catch (e) {}
+    renderTakes(); showStorage(); ui(); loadPads();
+  })();
+})();
+</script>
+</body>
+</html>
