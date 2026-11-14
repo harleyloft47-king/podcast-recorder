@@ -14,7 +14,7 @@ Open the link in Chrome, Edge, Firefox or Safari, click **Enable microphone**, a
 - **MP3 export** for publishing (96 kbps mono / 128 kbps stereo)
 - **✨ Polish:** one click to reach podcast loudness (−16 LUFS stereo / −19 LUFS mono), gentle compression, a −1 dB peak limiter, and silence trimmed from the start and end. Creates a new take and keeps the original.
 - **✂ Trim:** drag handles on a waveform to cut the start and end
-- **Soundboard:** built-in intro, outro, transition and sting sounds, plus your own sounds. Rename, replace or delete pads; keys 1–9 play them; everything you play is recorded
+- **Soundboard:** 14 built-in sounds (intro and outro themes, transition whoosh, sting, applause, drumroll + crash, ba-dum-tss, air horn, correct-answer ding, wrong-answer buzzer, sad trombone, record scratch, crickets, ta-da) plus your own sounds. Rename, replace or delete pads; keys 1–0 play the first ten; everything you play is recorded. The built-in sounds are synthesized in the browser, so they're original and free to use on your show
 - **Co-host mic:** record two USB mics on separate tracks (plus a soundboard track), then download each person's track or a mix
 - **Markers** (press M) that export as an Audacity labels file
 - **Notes** for each take: show notes, guest names, links
@@ -27,7 +27,7 @@ Open the link in Chrome, Edge, Firefox or Safari, click **Enable microphone**, a
 | Space | Record / pause / resume |
 | M | Drop a marker |
 | S | Stop and save the take |
-| 1–9 | Play soundboard pads |
+| 1–9, 0 | Play soundboard pads 1–10 |
 
 ## Tips
 
